@@ -17,11 +17,11 @@ contract Erc721TestNft is ERC721, ERC721Holder {
         return string(abi.encodePacked('data:application/json;base64,', enc));
     }
 
-    function mint(address to, uint256 tokenId) internal {
+    function mint(address to, uint256 tokenId) public {
         _mint(to, tokenId);
     }
 
-    function burn(uint256 tokenId) internal {
+    function burn(uint256 tokenId) public {
         _burn(tokenId);
     }
 }

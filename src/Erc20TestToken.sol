@@ -9,11 +9,11 @@ contract Erc20TestToken is ERC20 {
         // コントラクトデプロイ時に１度だけ呼ばれる
     }
 
-    function mint(address account, uint256 value) internal {
+    function mint(address account, uint256 value) public {
         _mint(account, value);
     }
 
-    function burn(address account, uint256 value) internal {
+    function burn(address account, uint256 value) public {
         _burn(account, value);
     }
 }

@@ -10,11 +10,11 @@ contract Erc1155TestNft is ERC1155 {
         // コントラクトデプロイ時に１度だけ呼ばれる
     }
 
-    function mint(address to, uint256 id, uint256 value, bytes memory data) internal {
+    function mint(address to, uint256 id, uint256 value, bytes memory data) public {
         _mint(to, id, value, data);
     }
 
-    function burn(address from, uint256 id, uint256 value) internal {
+    function burn(address from, uint256 id, uint256 value) public {
         _burn(from, id, value);
     }
 }
