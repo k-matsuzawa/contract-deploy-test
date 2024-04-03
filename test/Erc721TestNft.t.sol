@@ -50,5 +50,4 @@ contract Erc721TestNftTest is Test {
         assertEq(nft.ownerOf(1), other);
         assertEq(nft.ownerOf(2), other);
     }
-
 }

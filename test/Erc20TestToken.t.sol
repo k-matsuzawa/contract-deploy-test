@@ -48,5 +48,4 @@ contract Erc20TestTokenTest is Test {
         assertEq(token.balanceOf(admin), 0);
         assertEq(token.balanceOf(other), 3000);
     }
-
 }

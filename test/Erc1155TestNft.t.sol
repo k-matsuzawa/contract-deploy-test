@@ -47,5 +47,4 @@ contract Erc1155TestNftTest is Test {
         assertEq(nft.balanceOf(other, 1), 1000);
         assertEq(nft.balanceOf(other, 2), 2000);
     }
-
 }

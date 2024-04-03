@@ -13,8 +13,10 @@ contract Erc721TestNft is ERC721, ERC721Holder {
 
     function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {
         _requireOwned(tokenId);
-        string memory enc = Base64.encode('{"name":"Erc721TestNft","description":"","image":"https://k-matsuzawa.github.io/contract-deploy-test/blue_tile.png"}');
-        return string(abi.encodePacked('data:application/json;base64,', enc));
+        string memory enc = Base64.encode(
+            '{"name":"Erc721TestNft","description":"","image":"https://k-matsuzawa.github.io/contract-deploy-test/blue_tile.png"}'
+        );
+        return string(abi.encodePacked("data:application/json;base64,", enc));
     }
 
     function mint(address to, uint256 tokenId) public {
