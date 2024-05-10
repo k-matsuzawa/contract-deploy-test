@@ -49,6 +49,9 @@ cast call 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0 "balanceOf(address,uint256)
 cast call 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0 "balanceOf(address,uint256)(uint256)" 0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC 1 --rpc-url http://localhost:8545
 cast send 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0 --private-key 0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d "burn(address,uint256,uint256)" 0x70997970C51812dc3A010C7d01b50e0d17dc79C8 1 80 --rpc-url http://localhost:8545
 cast call 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0 "balanceOf(address,uint256)(uint256)" 0x70997970C51812dc3A010C7d01b50e0d17dc79C8 1 --rpc-url http://localhost:8545
+
+# get nonce
+cast nonce 0x70997970C51812dc3A010C7d01b50e0d17dc79C8 --rpc-url http://localhost:8545
 ```
 
 ## Foundry
